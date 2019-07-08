@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after
+*::before {
+    box-sizing: inherit;
+}
+
+.page{
+    width: 100%;
+}
+.page-header{
+    position: relative;
+    display: block;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 540px;
+    background: rgb(51, 51, 51);
+}
+.page-beground{
+    position: absolute;
+    width: 100%;
+    height: 540px;
+    display: block;
+    object-fit: cover;
+    z-index: 0;
+}
+.header-wrapper{
+    width: 320px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    
+}
+.wrapper-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 180px;
+}
+.wrapper-head-autorisation{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    height: 40px;
+}
+.autorisation-btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    border: 2px solid transparent;
+    background: transparent;
+    transition: border 2s;
+    border-radius: 20px;
+    outline: none;
+}
+.btn-login{
+    width: 76px;
+}
+.btn-singup{
+    width: 86px;
+}
+.autorisation-btn:focus,
+.autorisation-btn:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+.page-name{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.wrapper-content {
+    width: 320px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-title{
+    max-width: 320px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+}
+.header-paragraph{
+    width: 220px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.header-search{
+    width: 280px;
+    height: 40px;
+    padding: 0 10px 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 78, 80);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.header-search::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.page-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 66px;
+}
+.main-title{
+    width: 280px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-wrapper{
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper-people{
+    margin-bottom: 30px;
+    width: 220px;
+    /* height: 240px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.people-img{
+    height: 122px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.img-icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.red{
+    background: rgb(255, 78, 80);
+}
+.yellow{
+    background: rgb(255, 165, 7);
+}
+.green{
+    background: rgb(28, 215, 173);
+}
+.blue{
+    background: rgb(78, 115, 219);
+}
+.people-text{
+    width: 220px;
+    /* height: 118px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.people-name{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin: 1.2em 0;
+}
+.people-paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    text-align: center;
+}
+.layer-6{
+    order: 1;
+}
+.layer-8{
+    order: 2;
+}
+.layer-7{
+    order: 3;
+}
+.layer-10{
+    order: 4;
+}
+.footer-btn{
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    border: 4px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255, 78, 80);
+    background: none;
+    transition: border 2s;
+}
+.page-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.footer-btn:focus,
+.footer-btn:hover{
+    border: 2px solid rgb(255, 78, 80);
+}
+@media (min-width: 766px){
+    .page-header{
+        min-width: 748px;
+        height: 700px;
+        margin: 0 auto;
+    }
+    .page-beground{
+        width: 100%;
+        height: 700px;
+        display: block;
+        object-fit: cover;
+    }
+    .header-wrapper{
+        width: 748px;
+    }
+    .main-wrapper{
+        width: 492px;
+        justify-content: space-between;
+    }
+    .wrapper-head{
+        width: 660px;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .wrapper-head-autorisation{
+        order: 2;
+    }
+    .page-name{
+        order: 1;
+    }
+    .wrapper-content {
+        width: 100%;
+        height: 250px;
+    }
+    .header-title{
+        max-width: 540px;
+        font-size: 52px;
+    }
+    .header-paragraph{
+        width: 540px;
+        font-size: 24px;
+    }
+    .wrapper-people{
+        margin-bottom: 60px;
+    }
+    .layer-6{
+        order: 1;
+    }
+    .layer-8{
+        order: 3;
+    }
+    .layer-7{
+        order: 2;
+    }
+    .layer-10{
+        order: 4;
+    }
+}
+@media(min-width: 1458px){
+    .page-header{
+        min-width: 1440px;
+    }
+    .header-wrapper{
+        width: 1440px;
+    }
+    .main-wrapper{
+        width: 940px;
+    }
+    .wrapper-head{
+        width: 940px;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .main-title{
+        margin-bottom: 30px;
+    }
+}

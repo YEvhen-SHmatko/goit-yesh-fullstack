@@ -1,0 +1,16 @@
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Montserrat/montserrat-v13-cyrillic_latin-700.woff2') format('woff2'), 
+       url('../fonts/Montserrat/montserrat-v13-cyrillic_latin-700.woff') format('woff');
+}
+/* roboto-300 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Roboto/roboto-v19-cyrillic_latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Roboto/roboto-v19-cyrillic_latin-300.woff') format('woff'); /* Legacy iOS */
+}
