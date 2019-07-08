@@ -1,0 +1,77 @@
+.peoples{
+    height: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+    &__item{
+        background: $color-second;
+        display: flex;
+        flex-direction: column;
+    }
+    &__img{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        transform: translate(0, 0);
+        transition: transform .2s linear; 
+    }
+    &__item:hover &__img{
+        transform: translate(-10px, -10px);
+    }
+    &__item:hover &__navigation{
+        opacity: 1;
+    }
+    &__navigation{
+        opacity: 0;
+        display: flex;
+        position: absolute;
+        width: 380px;
+        height: 470px;
+        background-image: linear-gradient(rgba($color-first, 0.9), rgba($color-three, 0.9));
+        transition: opacity .2s linear;   
+    }
+    &__wrap{
+        width: 230px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon{
+        display: flex;
+        width: 56px;
+        height: 56px;
+        background: $color-three;
+        transition: background .2s linear; 
+    }
+    &__icon:hover{
+        background: $color-first;
+    }
+    &__icon:hover &__icon--img{
+        fill: $color-for;
+    }
+    &__icon--img{
+        display: flex;
+        fill:$color-first;
+        transition: fill .2s linear; 
+    }
+
+    &__text{
+        background: $color-for;
+        display: flex;
+        flex-direction: column;
+    }
+    &__name{
+        margin-top: 1.2em;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    &__position{
+        font-family: $font-second;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 15px;
+        line-height: 1.6;
+        color: $color-fift;
+    }
+}

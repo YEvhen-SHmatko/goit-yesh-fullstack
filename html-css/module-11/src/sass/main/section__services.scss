@@ -1,0 +1,30 @@
+.services{
+    height: 240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.service{
+    &__item{
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        width: 400px;
+        height: 70px;
+    }
+    &__img{
+        display: flex;
+        width: 90px;
+    }
+    &__title{
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    &__desc{
+        color: $color-fift;
+        padding-top: 1em;
+        font-family: $font-second;
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
