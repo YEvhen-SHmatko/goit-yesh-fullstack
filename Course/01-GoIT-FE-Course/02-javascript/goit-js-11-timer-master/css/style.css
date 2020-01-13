@@ -1,0 +1,37 @@
+.bg {
+    position: relative;
+    background-image: repeating-linear-gradient(90deg,
+                        #fdf6e6 0, #fdf6e6 20px,
+                        #cfdbc7 20px, #cfdbc7 40px,
+                        #dfa798 40px, #dfa798 70px,
+                        #fbc9b2 70px, #fbc9b2 100px)
+  }
+  
+  .timer {
+    position: absolute;
+    background: rgba(14, 12, 12, 0.7);
+    margin: 0 auto;
+    padding: 2vh;
+    border-radius: 2vh;
+    display: flex;
+    right: 0;
+    justify-content: space-between;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    text-align: center;
+    
+  }
+  .value{
+    min-width: 15vh;
+    color: rgb(255, 0, 0);
+    font-size: 15vh;
+  }
+  .label{
+    min-width: 5vh;
+    color: rgb(218, 32, 32);
+    font-size: 5vh;
+  }

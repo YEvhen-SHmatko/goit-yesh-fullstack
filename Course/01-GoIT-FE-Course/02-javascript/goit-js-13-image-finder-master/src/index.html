@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.2/dist/basicLightbox.min.css">
+    <title>goit-js-hw-13-image-finder</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <form class="search-form search-form__js" id="search-form">
+                <input class="search-input search-input__js" type="text" name="query" autocomplete="off"
+                    placeholder="Search images..." />
+                <div class="toolbar">
+                    <h5 class="toolbar-title">Types of Loads</h5>
+                    <div class="load-switch">
+                        <div class="switch">
+                            <input class="switch__input" type="checkbox" name="load" id="load-switch-control" />
+                            <label aria-hidden="true" class="switch__label" for="load-switch-control">On</label>
+                            <div aria-hidden="true" class="switch__marker"></div>
+                        </div>
+                    </div>
+                    <p class="toolbar-instruction">Button / Auto load</p>
+                </div>
+            </form>
+        </header>
+        <main>
+            <section class="section-gallery section-gallery__js">
+                <ul class="gallery gallery__js">
+                    <!-- Список <li> с карточками изображений -->
+                </ul>
+                <div class="line-bottom"></div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.2/dist/basicLightbox.min.js"></script>
+    <!-- <script src="./js/index.js" type="module"></script> -->
+</body>
+
+</html>

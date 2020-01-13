@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after
+*::before {
+    box-sizing: inherit;
+}
+h1{
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(81, 81, 81);
+    text-align: center;
+    margin-bottom: 27px;
+   }
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+    }
+.container{
+    width: 1110px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.page-header{
+    margin-bottom: 42px;
+}
+.site-logo{
+    float: left;
+    padding-top: 37px;
+}
+.site-logo img{
+    display:block;
+    width: 100%;
+    height: 100%;
+   } 
+.menu{
+    padding-top: 42px;
+    list-style: none;
+    float: right;
+}
+.submenu{
+    text-transform: uppercase;
+    margin-right: 30px;
+    float: left;
+}
+.submenu:last-child{
+    margin: 0;
+}
+.submenu a{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(15, 1, 1);
+}
+.submenu-link:hover{
+    color: rgb(78, 198, 171);
+}
+.main-bg{
+    background: rgb(233, 240, 253);
+}
+.products{ 
+   margin-bottom: 85px;
+}
+.slider{
+    padding: 0;
+    margin: 0;
+    min-width: 1110px;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+} 
+.slider-img{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* z-index: 1; */
+}
+.slider-img-size{
+        /* width: 1600px; */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.slider-tittle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0,0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.slider-tittle-center{
+    position: absolute;
+    width: 1108px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.slider-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%); 
+    width: 104px;
+    height: 104px;
+    background: rgba(26, 188, 156,0.5);
+    border: 0px solid rgb(26, 188, 156);
+}
+.slider-arrow img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slider-arrow:hover{
+    background: rgba(26, 188, 156,1);
+    cursor: pointer;
+}
+.slider-arrow-left{
+    left: 0%;
+}
+.slider-arrow-right{
+    right: 0%;
+}
+.slider-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;    
+    text-transform: uppercase;
+
+}
+.slider-text-big{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 766px;
+    height: 2em;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+.slider-text-little{
+    position: absolute;
+    bottom: 0%;
+    height: 1.2em;
+    font-size: 24px;
+    font-weight: 300;
+}
+.title{    
+    margin-top: 90px;
+}
+.title::after{
+    margin-bottom: 27px;
+    content: "";
+    display: block;
+    height: 7px;
+    width: 164px;
+    background: rgb(78, 198, 171);
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+.product-list{
+    background: rgb(233, 240, 253);
+}
+.product-list-item{
+    position: relative;
+    width: 255px;
+    height: 320px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin: 0 30px 30px 0;
+    float: left;
+}
+.product-list-item:hover .product-list-item-price{
+    background: rgb(127, 217, 199);
+}
+.product-list-item:hover .product-list-item-name{
+    background: rgb(26, 188, 156);
+}
+.product-list-item:nth-child(4n) {
+    margin-right:0;
+}
+.product-list-item-photo{
+    width: 255px;
+    height: 280px;
+    background: rgb(233, 240, 253);
+}
+.product-list-item-photo-size{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.product-list-item-name{
+    height: 40px;
+    width: 195px;
+    background: rgb(50, 50, 50);
+    float: left;
+    padding-left: 15px;
+    line-height: 40px;
+}
+.product-list-item-price{
+    width: 60px;
+    height: 40px;
+    background: rgb(140, 140, 140);
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+.product-list-item-icon{
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 235px;
+    height: 260px;
+    background:rgba(0, 0, 0,0.5);
+}
+.product-list-item-icon:hover{
+    opacity: 1;
+}
+.product-list-item-icon-all{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.product-list-item-icon-img{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgb(255, 255, 255);
+}
+.product-list-item-icon-img:hover{
+    background: rgb(26, 188, 156);
+    border: 2px solid rgb(26, 188, 156);
+    cursor: pointer;
+}
+.product-list-item-icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.product-list-item-icon-img-1{
+    transform: translate(-81px,-24px);
+}
+.product-list-item-icon-img-2{
+    transform: translate(-23px,-24px);
+}
+.product-list-item-icon-img-3{
+    transform: translate(35px,-24px);
+}
+.product-list-item-icon-img-4{
+    width: 164px;
+    height: 48px;
+    border: 1px solid rgb(255, 255, 255);
+    transform: translate(0, 57px);
+}
+.product-list-item-icon-img-4 img{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(35%,-50%);
+}
+.product-list-item-icon-img-4 h6{
+    position: absolute;
+    font-weight: 400;
+    width: 100px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%,-50%);
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: left;
+}
+.product-list-item-icon-img-4:hover{
+    background: rgb(50, 50, 50);
+    border: 2px solid rgb(50, 50, 50);
+    cursor: pointer;
+}
+.footer{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+}
+.footer-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

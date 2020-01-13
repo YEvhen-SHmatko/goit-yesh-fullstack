@@ -1,0 +1,29 @@
+/* Import partials below */
+@import './helpers/variables';
+@import './normalize';
+
+/* Base and others */
+@import './base';
+@import './Components/other/other';
+@import './Components/tittle';
+@import './Components/btn';
+
+/* Header */
+@import './header/header';
+@import './header/background';
+@import './header/menu__item';
+@import './header/menu__link';
+@import './header/team';
+
+/* Main */
+@import './main/main';
+@import './main/section__services';
+@import './main/section__peoples';
+
+/* Footer */
+@import './footer';
+
+/* Media and Animations */
+@import './media';
+@import './animation';
+

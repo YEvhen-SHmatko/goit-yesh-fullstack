@@ -1,0 +1,23 @@
+.gallery {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1050px;
+  background: rgba(54, 53, 53, 0.5);
+  display: flex;
+}
+.gallery__item {
+  display: flex;
+  margin: 25px;
+  width: 300px;
+  list-style: none;
+}
+.gallery__img {
+  width: 100%;
+}
+#validation-input.valid {
+  outline: 3px solid #4caf50;
+}
+
+#validation-input.invalid {
+  outline: 3px solid #f44336;
+}

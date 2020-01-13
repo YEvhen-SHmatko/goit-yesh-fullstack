@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{    
+    width: 1140px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+header {
+    margin: 0 0 80px;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+}
+h1{
+    vertical-align: top;
+    color: rgb(81, 81, 81);
+}
+h3{
+    margin: 0em;
+    font-size: 48px;
+}
+h4{
+    margin: 0.5em;
+    font-size: 18px;
+}
+a{
+    text-decoration: none; 
+}
+.icon{
+    font-weight: 300;
+    font-size: 30px;
+    margin: -30px auto;
+    padding: 0.5em 0;
+    float: left;
+    color: rgb(81, 81, 81);
+}
+.icon::first-letter {
+    font-weight: 900;
+    color: rgb(26, 188, 156);
+    font-size: 30px;
+  }
+.menu{
+    float: right;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+.menu-btm{
+    padding: 10px 15px;
+    float: left;
+}
+.menu-btm-link{
+    border: 1px solid #fff;
+    color: rgb(15, 01, 01);
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;    
+    outline: none;  
+}      
+.menu-btm-link:focus{
+    color: rgb(26, 188, 156);
+    border: 1px solid #fff;
+}
+.menu-btm-link:hover{
+    color: rgb(26, 188, 156);
+    cursor: pointer;
+} 
+.title{  
+    width: 1140px;
+    padding: 0;
+    position: relative;  
+    text-align: center;
+    margin: 100px 0 75px 0;
+}
+.title-div{
+    margin:  0 0 30px 0;
+    color: rgb(81, 81, 81);
+    font-family: Roboto;
+    display: inline-block;
+    text-align: center;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background: rgb(26, 188, 156);
+    width: 164px;
+    height: 7px;
+}
+.content{
+    padding: 0;
+    margin: 0;
+    /* float: left; */
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.card{
+    margin: 15px;
+    width: 255px;
+    float: left;
+}
+.card:hover .price{
+    background: rgb(127, 217, 199);
+    cursor: pointer;
+}
+.card:hover .name{
+    background: rgb(26, 188, 156);
+    cursor: pointer;
+}
+.photo-size{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo{
+    width: 255px;
+    height: 282px;
+    background: rgb(233, 240, 253);
+    margin: 0 auto;
+}
+.name{
+    width: 205px; 
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    color: rgb(255, 255, 255);
+    background: rgb(50, 50, 50);
+    text-transform: uppercase;
+    text-align: left;
+}
+.price{
+    width: 50px;
+    height: 40px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    background: rgb(140, 140, 140);
+    text-transform: uppercase;
+}
+.name .price p{
+    margin: 0.5em;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.news-wrapper{
+    vertical-align: top;
+    padding: 0 0 35px 0;
+    box-sizing: border-box;
+}
+.news{
+    margin: 0 15px 45px;
+    font-family: 'Open Sans', sans-serif;
+    width: 350px;    
+    box-sizing: border-box;
+    float: left;
+    text-align: left;
+}
+.news-img{
+    width: 350px;
+    height: 260px;
+}
+.news-content{
+    font-size: 20px;
+}
+.news-title{
+    position: relative;
+    margin: 15px 0 45px 0;
+}
+.news-title::after{
+    content: '';
+    margin: 15px 0;
+    top: 100%;
+    left: 0%;
+    position: absolute;
+    background: rgb(26, 188, 156);
+    width: 136px;
+    height: 3px;
+}
+.news-title h5{
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.news-content p{
+    margin: 0 0 15px 0;
+    padding: 0;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.button-wrapper{
+    margin: 60px auto;
+    text-align: center;
+}
+.button-more{
+    margin: 0 auto;
+    height: 60px;
+    width: 165px;
+    background: rgb(26, 188, 156);
+    color: rgb(255, 255, 255);
+    border: 0px solid #626262;
+    border-radius: 2px;
+    font-size: 20px;
+    outline: none;
+}
+/* Логично сделать выделение кнопки */
+.button-more:hover{
+    background: rgb(81, 81, 81);
+    text-anchor: rgb(255, 255, 255);
+    border: 0px solid #626262;
+    cursor: pointer;
+}
+.button-more:focus{
+    background: rgb(81, 81, 81);
+    text-anchor: rgb(255, 255, 255);
+    border: 0px solid #626262;
+}

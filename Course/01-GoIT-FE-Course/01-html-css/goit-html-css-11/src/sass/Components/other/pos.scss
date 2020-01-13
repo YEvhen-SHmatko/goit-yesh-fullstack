@@ -1,0 +1,18 @@
+.pos{
+    &--r{
+        position: relative;
+    }
+    &--a{
+        position: absolute;
+    }
+    &__center{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__center--x{
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0);
+    }
+}

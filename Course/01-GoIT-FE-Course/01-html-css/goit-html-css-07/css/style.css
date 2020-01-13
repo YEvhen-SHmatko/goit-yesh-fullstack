@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after
+*::before {
+    box-sizing: inherit;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+.page-header{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.page-header-icon{
+    animation: animation-icon 1s linear;
+    transform: translate(10px, y);
+}
+@keyframes animation-icon {
+    from { transform: translate(0, -50px); opacity: 0; }
+    to { transform: translate(0, 0); opacity: 1; }
+}
+.menu{
+    width: 490px;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: space-between;
+    list-style: none;
+}
+.menu-item{
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-item-link:focus,
+.menu-item-link:hover{
+    color: rgb(254, 209, 54);
+    cursor: pointer;
+    transition: color .2s linear;  
+}   
+.menu-item a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+    text-align: center;
+}
+.page-main{
+    display: flex;
+    flex-direction: column;
+}
+.page-main-services{
+}
+.page-title{
+    display: flex;
+    flex-direction: column;
+    height: 204px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.page-title h3{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.page-title p{
+    font-family: 'Droid Serif';
+    font-size: 16px;
+
+}
+.page-main-services-wrp{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    padding-bottom: 100px;
+
+}
+.page-main-services-wrp-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 232px;
+}
+.page-main-services-wrp-item-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+    width: 74px;
+    height: 74px;
+    border: 4px solid rgb(254, 209, 54);
+    border-radius: 37px;
+}
+.page-main-services-wrp-item h4{
+    text-align: center;
+    color: rgb(34, 34, 34);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 75px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.page-main-services-wrp-item p{
+    text-align: center;
+    color: rgb(119, 119, 119);
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.page-main-form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: rgb(34, 34, 34);
+}
+.page-main-form-bg{
+    position: absolute;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    width: 100%;
+    justify-content: flex-end;
+    background: rgb(34, 34, 34);
+}
+.page-main-form-wrp{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+.page-main-form-wrp-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+}
+.form{
+    width: 940px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 210px;
+}
+.input{
+    display: block;
+    background: none;
+    padding: 10px;
+    width: 456px;
+    height: 50px;
+    border: none;
+    background: rgb(255, 255, 255);
+    outline: 4px solid transparent;
+    outline-offset: -2px;
+    transition: outline-color 2s;
+}
+.verification input[name='email']:focus:valid,
+.verification input[name="name"]:focus:valid,
+.verification textarea:focus:valid{
+    outline-color: green;
+    transition: outline-color 2s;
+}
+.verification input[name='email']:focus:invalid,
+.verification input[name="name"]:focus:invalid,
+.verification textarea:focus:invalid
+{
+        outline-color: red;
+        transition: outline-color 2s;
+      }
+.input-big{
+    height: 210px;
+}
+.wrp-btn{
+    width: 100%;
+    text-align: center;
+}
+textarea{
+    box-sizing: border-box;
+    resize: none;  
+    display: block;
+    outline: 4px solid transparent;
+    outline-offset: -2px;
+    transition: outline-color 0.1s;
+}
+textarea::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(124, 124, 124);
+}
+.input::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(124, 124, 124);
+}
+.btn{
+    width: 240px;
+    height: 70px;
+    border: none;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-send{
+        background: rgb(254, 209, 54);
+}

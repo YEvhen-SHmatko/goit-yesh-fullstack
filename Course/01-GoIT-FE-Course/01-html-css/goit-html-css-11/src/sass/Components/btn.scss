@@ -1,0 +1,33 @@
+.btn{
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-for;
+
+    &--submit{
+        border: none;
+        background: $color-second;
+        width: 150px;
+        height: 40px;
+        transition: background .2s linear; 
+    }
+    &--more{
+        background: transparent;
+        border: 3px solid $color-for;
+        width: 160px;
+        height: 40px;
+        margin-top: 100px;
+        transition: color .2s linear, border .2s linear; 
+    }
+    &--more:focus,
+    &--more:hover{
+        color: $color-three;
+        border: 3px solid  $color-three;
+    }
+    &--submit:focus,
+    &--submit:hover{
+        background: $color-first;
+    }
+}

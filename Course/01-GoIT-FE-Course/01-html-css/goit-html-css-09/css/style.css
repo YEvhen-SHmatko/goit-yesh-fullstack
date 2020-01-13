@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after
+*::before {
+    box-sizing: inherit;
+}
+
+.header{
+    min-width: 338px;
+    height: 540px;
+    background-color: rgb(51, 51, 51);
+    background-image: url(../img/Vector\ Smart\ Object.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+.content{
+    margin-top: 20px;
+    width: 320px;
+}
+.header__btn{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    border: 2px solid transparent;
+    background: transparent;
+    transition: border 2s;
+    border-radius: 20px;
+    outline: none;
+}
+.btn--login{
+    width: 76px;
+}
+.btn--singup{
+    width: 86px;
+}
+.header__btn:focus,
+.header__btn:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+.header__name{
+    margin-top: 110px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__title{
+    margin-top: 30px;
+    max-width: 320px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+}
+.header__paragraph{
+    margin-top: 20px;
+    width: 220px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.btn--search{
+    margin-top: 20px;
+    width: 280px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 78, 80);
+    text-align: center;
+    outline:none;
+}
+.btn--search:hover{
+    outline:none;
+}
+@media (min-width: 766px){
+    .content{
+        margin-top: 20px;
+        width: 748px;
+    }
+    .header__name{
+        margin-top: 0;
+        justify-content: flex-start;
+    }
+}
+@media(min-width: 1458px){
+
+}
