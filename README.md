@@ -3,8 +3,8 @@ GoIT
 Course: "FullStack Developer"
 
 goit-fe-course
-	HTML5 / CSS3
-		goit-html-css-01-02
+..HTML5 / CSS3
+....goit-html-css-01-02
 ....goit-html-css-03
 ....goit-html-css-03v2
 ....goit-html-css-04
